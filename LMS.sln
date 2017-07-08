@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "LMS", "", "{230AC620-43E3-4E52-B960-40BD3D4EDAB7}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/LMS"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\LMS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\LMS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/LMS"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\LMS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\LMS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49755"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "test2", "..\..\test2\test2.vbproj", "{23E6CE60-823B-45A0-A133-DDDBD358C38E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{230AC620-43E3-4E52-B960-40BD3D4EDAB7}.Debug|.NET.ActiveCfg = Debug|.NET
+		{230AC620-43E3-4E52-B960-40BD3D4EDAB7}.Debug|.NET.Build.0 = Debug|.NET
+		{23E6CE60-823B-45A0-A133-DDDBD358C38E}.Debug|.NET.Build.0 = Debug|Any CPU
+		{23E6CE60-823B-45A0-A133-DDDBD358C38E}.Debug|.NET.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

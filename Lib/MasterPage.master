@@ -1,0 +1,63 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="Librarian_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Librarian</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            font-size: x-large;
+            font-family: "Comic Sans MS";
+            font-weight: bold;
+            color: #0000FF;
+        }
+    </style>
+</head>
+<body alink="#ffff99" bgcolor="#FFFF99">
+    <form id="form1" runat="server">
+    <div>
+        <br />
+        <asp:Image ID="Image1" runat="server" Height="83px" 
+            ImageUrl="~/images/Hitk_1.png" Width="94px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="style1">HERITAGE INSTITUTE OF TECHNOLOGY, KOLKATA</span><asp:Menu 
+            ID="Menu1" runat="server" BackColor="#FFFBD6" 
+            DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" 
+            ForeColor="#990000" Orientation="Horizontal" StaticSubMenuIndent="10px" 
+            style="font-weight: 700; font-size: large" Width="100%" Height="36px" 
+            StaticTopSeparatorImageUrl="~/images/menu_separator.png">
+            <StaticMenuStyle BackColor="#FFCC00" BorderColor="#FF3300" 
+                BorderStyle="Solid" />
+            <StaticSelectedStyle BackColor="Yellow" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+            <DynamicMenuStyle BackColor="#FFFBD6" />
+            <DynamicSelectedStyle BackColor="#FFCC66" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+            <Items>
+                <asp:MenuItem Text="Issue Book" Value="Issue Book" 
+                    NavigateUrl="~/Lib/issue.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Return Book" Value="Return Book" 
+                    NavigateUrl="~/Lib/returnmult.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Books A/C" Value="Student A/C">
+                    <asp:MenuItem NavigateUrl="~/Lib/student_ac.aspx" Text="By Student ID" 
+                        Value="By Student ID"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Lib/all_bro_book.aspx" Text="All Borrowed Books" 
+                        Value="All Borrowed Books"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="-----" Value="-----"></asp:MenuItem>
+                <asp:MenuItem Text="Logout" Value="Logout" NavigateUrl="~/Lib/Default.aspx"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

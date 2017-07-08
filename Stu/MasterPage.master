@@ -1,0 +1,58 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="Stu_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Student</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            font-size: x-large;
+            font-family: "Comic Sans MS";
+            font-weight: bold;
+            color: #0000FF;
+        }
+    </style>
+</head>
+<body bgcolor="#FFFF99">
+    <form id="form1" runat="server">
+    
+        <asp:Image ID="Image1" runat="server" Height="94px" 
+            ImageUrl="~/images/Hitk_1.png" Width="120px" />
+      
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+&nbsp;<span class="style1">HERITAGE INSTITUTE OF TECHNOLOGY, KOLKATA</span>
+    <div style="text-align: right">
+        
+        <asp:Label ID="Label1" runat="server" Text="Hello !!!"></asp:Label>
+        &nbsp;
+        
+        &nbsp;
+        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Stu/Default4.aspx">Message</asp:HyperLink>
+
+        &nbsp;
+        
+        &nbsp;
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Stu/Default3.aspx">Change Password</asp:HyperLink>
+         &nbsp;
+        
+        &nbsp;
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Stu/Default.aspx">My Account</asp:HyperLink>
+        &nbsp;
+        
+        &nbsp;
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Stu/Default2.aspx">Logout</asp:HyperLink>
+    </div>
+    <div style="text-align: right">
+        &nbsp;
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
