@@ -186,3 +186,5 @@ CREATE TABLE [dbo].[users](
 
 GO
 SET ANSI_PADDING OFF
+
+INSERT INTO users VALUES('admin','admin','A');
